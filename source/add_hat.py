@@ -46,7 +46,7 @@ def add_hat_helper(img,rect,shape,hat_mask,hat_img):
     return img
 
 
-def add_hat(filepath='../images/person.jpg',hatpath= '../images/hat.jpg',maskpath= '../images/mask.jpg'):
+def add_hat(filepath='../images/Solvay.jpg',hatpath= '../images/hat.jpg',maskpath= '../images/mask.jpg'):
     try:
         img = cv2.imread(filepath)
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
