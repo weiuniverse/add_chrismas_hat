@@ -61,7 +61,7 @@ def add_hat(filepath='../images/Solvay.jpg',hatpath= '../images/hat.jpg',maskpat
     if len(rects)>0:
         for rect in rects:
             (x, y, w, h) = face_utils.rect_to_bb(rect)
-            cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2,8,0)
+            # cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2,8,0)
             shape = predictor(img,rect)
             img_hat = add_hat_helper(img,rect,shape,hat_mask,hat_img)
             cv2.imwrite('../chrismashat.jpg',img_hat)
