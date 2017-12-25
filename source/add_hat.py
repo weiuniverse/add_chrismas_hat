@@ -75,7 +75,7 @@ predictor = dlib.shape_predictor("../model/shape_predictor_5_face_landmarks.dat"
 
 def main(argv):
     print("usage: python add_hat.py imagepath")
-    if argv == None:
+    if len(argv) == 1:
         add_hat()
     else:
         filepath = str(argv[1])
